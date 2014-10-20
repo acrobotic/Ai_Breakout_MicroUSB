@@ -276,17 +276,6 @@ This library includes USB, pin headers and sockets in different configurations (
 <pad name="4" x="3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <text x="-5.08" y="1.524" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
 </package>
-<package name="1X04-NOFIRST">
-<pad name="1" x="-3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-5.08" y="1.524" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
-<wire x1="-5.08" y1="1.27" x2="5.08" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="-1.27" x2="-5.08" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="1.27" x2="5.08" y2="-1.27" width="0.2032" layer="21"/>
-</package>
 <package name="USB-MICROB-SMD">
 <description>Micro USB Package</description>
 <wire x1="-3.4" y1="-2.15" x2="-3" y2="-2.15" width="0.127" layer="51"/>
@@ -352,13 +341,26 @@ This library includes USB, pin headers and sockets in different configurations (
 <smd name="D-" x="-0.65" y="2.65" dx="1.4" dy="0.4" layer="1" rot="R90"/>
 <smd name="D+" x="0" y="2.65" dx="1.4" dy="0.4" layer="1" rot="R90"/>
 <smd name="ID" x="0.65" y="2.65" dx="1.4" dy="0.4" layer="1" rot="R90"/>
-<text x="-2.54" y="-4.445" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <smd name="M5" x="-1.15" y="0" dx="1.8" dy="1.8" layer="1" rot="R90"/>
 <smd name="M6" x="1.15" y="0" dx="1.8" dy="1.8" layer="1" rot="R90"/>
 <pad name="MT1" x="-2.425" y="2.8" drill="0.6" diameter="1.2"/>
 <pad name="MT2" x="2.425" y="2.8" drill="0.6" diameter="1.2"/>
 <pad name="MT3" x="-3.61" y="0" drill="1.1" diameter="2" rot="R180"/>
 <pad name="MT4" x="3.61" y="0" drill="1.1" diameter="2" rot="R90"/>
+</package>
+<package name="1X04-NOFIRST">
+<pad name="1" x="-3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-5.08" y="1.524" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
+</package>
+<package name="1X04-NFNS">
+<pad name="1" x="-3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-5.08" y="1.524" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -434,6 +436,17 @@ This library includes USB, pin headers and sockets in different configurations (
 <technology name=""/>
 </technologies>
 </device>
+<device name="NFNS" package="1X04-NFNS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="USB" prefix="USB">
@@ -481,7 +494,8 @@ This library includes USB, pin headers and sockets in different configurations (
 <attribute name="AUTHOR" value="A.I. HARDWARE SITH LORDS"/>
 <attribute name="REV" value="1.0"/>
 </part>
-<part name="J1" library="Ai_Connectors" deviceset="1X04" device="NOSILK"/>
+<part name="J1" library="Ai_Connectors" deviceset="1X04" device="NFNS" value="1X04NFNS"/>
+<part name="J2" library="Ai_Connectors" deviceset="1X04" device="NFNS" value="1X04NFNS"/>
 <part name="USB1" library="Ai_Connectors" deviceset="USB" device="MICROB-TH"/>
 </parts>
 <sheets>
@@ -491,38 +505,55 @@ This library includes USB, pin headers and sockets in different configurations (
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
-<instance part="J1" gate="G$1" x="140.97" y="99.06" rot="R180"/>
-<instance part="USB1" gate="G$1" x="125.73" y="100.33" rot="R180"/>
+<instance part="J1" gate="G$1" x="125.73" y="102.87"/>
+<instance part="J2" gate="G$1" x="148.59" y="102.87" rot="MR0"/>
+<instance part="USB1" gate="G$1" x="137.16" y="88.9" rot="R270"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="D+" class="0">
+<net name="VBUS" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<pinref part="USB1" gate="G$1" pin="D+"/>
-<wire x1="132.08" y1="101.6" x2="135.89" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="USB1" gate="G$1" pin="VBUS"/>
+<wire x1="140.97" y1="95.25" x2="140.97" y2="97.79" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="140.97" y1="97.79" x2="143.51" y2="97.79" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="130.81" y1="97.79" x2="140.97" y2="97.79" width="0.1524" layer="91"/>
+<junction x="140.97" y="97.79"/>
 </segment>
 </net>
 <net name="D-" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="3"/>
 <pinref part="USB1" gate="G$1" pin="D-"/>
-<wire x1="132.08" y1="99.06" x2="135.89" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VBUS" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="4"/>
-<pinref part="USB1" gate="G$1" pin="VBUS"/>
-<wire x1="132.08" y1="96.52" x2="135.89" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="138.43" y1="95.25" x2="138.43" y2="100.33" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="138.43" y1="100.33" x2="143.51" y2="100.33" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="130.81" y1="100.33" x2="138.43" y2="100.33" width="0.1524" layer="91"/>
+<junction x="138.43" y="100.33"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="130.81" y1="105.41" x2="133.35" y2="105.41" width="0.1524" layer="91"/>
 <pinref part="USB1" gate="G$1" pin="GND"/>
-<wire x1="132.08" y1="104.14" x2="135.89" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="133.35" y1="105.41" x2="133.35" y2="95.25" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="4"/>
+<wire x1="133.35" y1="105.41" x2="143.51" y2="105.41" width="0.1524" layer="91"/>
+<junction x="133.35" y="105.41"/>
+</segment>
+</net>
+<net name="D+" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="3"/>
+<pinref part="USB1" gate="G$1" pin="D+"/>
+<wire x1="143.51" y1="102.87" x2="135.89" y2="102.87" width="0.1524" layer="91"/>
+<wire x1="135.89" y1="102.87" x2="135.89" y2="95.25" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="135.89" y1="102.87" x2="130.81" y2="102.87" width="0.1524" layer="91"/>
+<junction x="135.89" y="102.87"/>
 </segment>
 </net>
 </nets>
