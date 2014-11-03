@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14709,59 +14709,6 @@ Standard 8.5x11 US Letter frame</description>
 This library includes USB, pin headers and sockets in different configurations (e.g., pad shapes, with or without silkscreen), SD cards, screw terminals, etc.
 &lt;/p&gt;</description>
 <packages>
-<package name="1X04-LONG">
-<wire x1="-5.08" y1="0.635" x2="-5.08" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="0.635" x2="5.08" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<pad name="2" x="-1.27" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<pad name="3" x="1.27" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<pad name="4" x="3.81" y="0" drill="1.1176" diameter="1.8796" shape="long" rot="R90"/>
-<text x="-5.08" y="2.54" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
-</package>
-<package name="1X04">
-<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="2.54" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="0.635" x2="-5.08" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-4.445" y1="1.27" x2="-5.08" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-0.635" x2="-4.445" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="0.635" x2="5.08" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="1.016" diameter="1.8796" rot="R90" first="yes"/>
-<pad name="2" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-5.08" y="1.524" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
-</package>
-<package name="1X04-NOSILK">
-<pad name="1" x="-3.81" y="0" drill="1.016" diameter="1.8796" rot="R90" first="yes"/>
-<pad name="2" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-5.08" y="1.524" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
-</package>
 <package name="USB-MICROB-SMD">
 <description>Micro USB Package</description>
 <wire x1="-3.4" y1="-2.15" x2="-3" y2="-2.15" width="0.127" layer="51"/>
@@ -14834,33 +14781,42 @@ This library includes USB, pin headers and sockets in different configurations (
 <pad name="MT3" x="-3.61" y="0" drill="1.1" diameter="2" rot="R180"/>
 <pad name="MT4" x="3.61" y="0" drill="1.1" diameter="2" rot="R90"/>
 </package>
-<package name="1X04-NOFIRST">
-<pad name="1" x="-3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-5.08" y="1.524" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<package name="1X02-ST">
+<wire x1="-3.75" y1="3.4" x2="-3.75" y2="-2.24" width="0.2032" layer="21"/>
+<wire x1="-3.75" y1="-2.24" x2="-3.75" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="-3.75" y1="-3.6" x2="3.75" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="3.75" y1="-3.6" x2="3.75" y2="-2.24" width="0.2032" layer="21"/>
+<wire x1="3.75" y1="-2.24" x2="3.75" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="3.75" y1="3.4" x2="-3.75" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="-3.75" y1="-2.24" x2="3.75" y2="-2.24" width="0.2032" layer="21"/>
+<pad name="2" x="1.75" y="0" drill="1.016" diameter="2.032"/>
+<pad name="1" x="-1.75" y="0" drill="1.016" diameter="2.032" first="yes"/>
+<text x="-3.81" y="3.81" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
 </package>
-<package name="1X04-NFNS">
-<pad name="1" x="-3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-5.08" y="1.524" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<package name="1X02">
+<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.2032" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90" first="yes"/>
+<pad name="2" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-2.54" y="1.524" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.2032" layer="21"/>
+</package>
+<package name="1X02-NOFIRST">
+<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.2032" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-2.54" y="1.524" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.2032" layer="21"/>
+</package>
+<package name="1X02-SKINNY">
+<pad name="1" x="-1.27" y="0" drill="1.016" diameter="1.524" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" diameter="1.524" rot="R90"/>
 </package>
 </packages>
 <symbols>
-<symbol name="1X04">
-<wire x1="2.54" y1="-7.62" x2="-2.54" y2="-7.62" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-7.62" width="0.4064" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="2.54" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.4064" layer="94"/>
-<text x="-2.54" y="5.715" size="1.27" layer="95" font="vector" ratio="15">&gt;NAME</text>
-<pin name="1" x="5.08" y="-5.08" length="short" rot="R180"/>
-<pin name="2" x="5.08" y="-2.54" length="short" rot="R180"/>
-<pin name="3" x="5.08" y="0" length="short" rot="R180"/>
-<pin name="4" x="5.08" y="2.54" length="short" rot="R180"/>
-</symbol>
 <symbol name="USB">
 <wire x1="1.27" y1="5.08" x2="-3.81" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-3.81" y1="5.08" x2="-3.81" y2="-5.08" width="0.254" layer="94"/>
@@ -14871,70 +14827,17 @@ This library includes USB, pin headers and sockets in different configurations (
 <pin name="VBUS" x="-6.35" y="3.81" visible="pad" length="short"/>
 <pin name="GND" x="-6.35" y="-3.81" visible="pad" length="short"/>
 </symbol>
+<symbol name="1X02">
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.4064" layer="94"/>
+<text x="-2.54" y="3.175" size="1.27" layer="95" font="vector" ratio="15">&gt;NAME</text>
+<pin name="1" x="5.08" y="-2.54" length="short" rot="R180"/>
+<pin name="2" x="5.08" y="0" length="short" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="1X04" prefix="J">
-<gates>
-<gate name="G$1" symbol="1X04" x="0" y="0"/>
-</gates>
-<devices>
-<device name="LONG" package="1X04-LONG">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="" package="1X04">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NOSILK" package="1X04-NOSILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NOFIRST" package="1X04-NOFIRST">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NFNS" package="1X04-NFNS">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="USB" prefix="USB">
 <gates>
 <gate name="G$1" symbol="USB" x="0" y="0"/>
@@ -14964,6 +14867,49 @@ This library includes USB, pin headers and sockets in different configurations (
 </device>
 </devices>
 </deviceset>
+<deviceset name="1X02" prefix="J">
+<gates>
+<gate name="G$1" symbol="1X02" x="0" y="0"/>
+</gates>
+<devices>
+<device name="ST" package="1X02-ST">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="1X02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NOFIRST" package="1X02-NOFIRST">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SKINNY" package="1X02-SKINNY">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -14980,10 +14926,10 @@ This library includes USB, pin headers and sockets in different configurations (
 <attribute name="AUTHOR" value="A.I. HARDWARE SITH LORDS"/>
 <attribute name="REV" value="1.0"/>
 </part>
-<part name="J1" library="Ai_Connectors" deviceset="1X04" device="NFNS" value="1X04NFNS"/>
-<part name="J2" library="Ai_Connectors" deviceset="1X04" device="NFNS" value="1X04NFNS"/>
 <part name="USB1" library="Ai_Connectors" deviceset="USB" device="MICROB-TH"/>
 <part name="U$2" library="Ai_Miscellany" deviceset="AI-LOGO" device="XS"/>
+<part name="J1" library="Ai_Connectors" deviceset="1X02" device=""/>
+<part name="J2" library="Ai_Connectors" deviceset="1X02" device="NOFIRST" value="1X02NOFIRST"/>
 </parts>
 <sheets>
 <sheet>
@@ -14992,10 +14938,10 @@ This library includes USB, pin headers and sockets in different configurations (
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
-<instance part="J1" gate="G$1" x="125.73" y="102.87"/>
-<instance part="J2" gate="G$1" x="148.59" y="102.87" rot="MR0"/>
 <instance part="USB1" gate="G$1" x="137.16" y="88.9" rot="R270"/>
 <instance part="U$2" gate="G$1" x="139.7" y="16.51"/>
+<instance part="J1" gate="G$1" x="125.73" y="100.33"/>
+<instance part="J2" gate="G$1" x="148.59" y="100.33" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -15004,44 +14950,32 @@ This library includes USB, pin headers and sockets in different configurations (
 <segment>
 <pinref part="USB1" gate="G$1" pin="VBUS"/>
 <wire x1="140.97" y1="95.25" x2="140.97" y2="97.79" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="140.97" y1="97.79" x2="143.51" y2="97.79" width="0.1524" layer="91"/>
+<wire x1="140.97" y1="97.79" x2="130.81" y2="97.79" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="130.81" y1="97.79" x2="140.97" y2="97.79" width="0.1524" layer="91"/>
-<junction x="140.97" y="97.79"/>
 </segment>
 </net>
 <net name="D-" class="0">
 <segment>
 <pinref part="USB1" gate="G$1" pin="D-"/>
 <wire x1="138.43" y1="95.25" x2="138.43" y2="100.33" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="2"/>
 <wire x1="138.43" y1="100.33" x2="143.51" y2="100.33" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="130.81" y1="100.33" x2="138.43" y2="100.33" width="0.1524" layer="91"/>
-<junction x="138.43" y="100.33"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="130.81" y1="105.41" x2="133.35" y2="105.41" width="0.1524" layer="91"/>
+<wire x1="130.81" y1="100.33" x2="133.35" y2="100.33" width="0.1524" layer="91"/>
 <pinref part="USB1" gate="G$1" pin="GND"/>
-<wire x1="133.35" y1="105.41" x2="133.35" y2="95.25" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="4"/>
-<wire x1="133.35" y1="105.41" x2="143.51" y2="105.41" width="0.1524" layer="91"/>
-<junction x="133.35" y="105.41"/>
+<wire x1="133.35" y1="100.33" x2="133.35" y2="95.25" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="D+" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="3"/>
 <pinref part="USB1" gate="G$1" pin="D+"/>
-<wire x1="143.51" y1="102.87" x2="135.89" y2="102.87" width="0.1524" layer="91"/>
 <wire x1="135.89" y1="102.87" x2="135.89" y2="95.25" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="135.89" y1="102.87" x2="130.81" y2="102.87" width="0.1524" layer="91"/>
-<junction x="135.89" y="102.87"/>
+<wire x1="135.89" y1="102.87" x2="143.51" y2="102.87" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
